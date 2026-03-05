@@ -46,5 +46,5 @@ Este proyecto es una aplicación web interactiva que tiene como propósito simul
 
 ## Enlaces
 
-- Github:
+- Github: https://github.com/Joshuabym856/taller-2
 - Netlify: https://singup-login.netlify.app/
