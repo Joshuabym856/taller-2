@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio de sesión</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="pestañas">
+        <button class="pestaña-bt active" data-tab="registro">Registro</button>
+        <button class="pestaña-bt" data-tab="login">Iniciar Sesión</button>
+    </div>
+
+    <div class="contenedor-main">
+        <form id="formulario-registro" class="cont-pestaña">
+            <h2>Crea tu cuenta</h2>
+
+        <div class="datos-entrada">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" placeholder="Ej: juanito_83" required minlength="5">
+            <span class="error-msg">El usuario debe tener al menos 5 caracteres</span>
+        </div>
+
+        <div class="datos-entrada">
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" placeholder="juanito@correo.com" required>
+            <span class="error-msg">Ingrese un correo válido</span>
+        </div>
+
+        <div class="datos-entrada">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+            <span class="error-msg">Minimo 8 caracteres, incluyendo letras y números</span>
+            <div class="nivelsegu" id="nivelseguridad"></div>
+            <button type="button" class="verpas" id="vercontra">👁</button>
+        </div>
+
+        <div class="datos-entrada">
+            <label for="confirmar-contraseña">Confirmar Contraseña</label>
+            <input type="password" id="confirmar-contraseña" required>
+            <span class="error-msg">Las contraseñas deben coincidir</span>
+            <button type="button" class="verpas" id="vercontra2">👁</button>
+        </div>
+
+        <p id="mensaje-registro"></p>
+        <button type="submit" id="boton-enviar">Registrarme</button>
+        <p>¿Ya tienes cuenta? <span class="link-login">Iniciar Sesión</span></p>
+        </form>
+
+
+    <form id="formulario-login" class="cont-pestaña">
+        <h2>Iniciar Sesión</h2>
+
+        <div class="datos-entrada">
+            <label for="login-usuario">Nombre de usuario o correo</label>
+            <input type="text" id="login-usuario" placeholder="Ej: juanito_83 o juanito@correo.com" required>
+        </div>
+
+        <div class="datos-entrada">
+            <label for="login-contraseña">Contraseña</label>
+            <input type="password" id="login-contraseña" placeholder="Ingresa tu contraseña" required>
+            <button type="button" class="verpas" id="vercontra-login">👁</button>
+        </div>
+        <p id="mensaje-login"></p>
+        <button type="submit" id="boton-iniciar-sesion">Iniciar Sesión</button>
+        <p>¿No tienes cuenta? <span class="link-registro">Regístrate</span></p>
+    </form>
+    </div>
+</body>
+</html>
