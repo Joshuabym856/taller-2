@@ -47,4 +47,4 @@ Este proyecto es una aplicación web interactiva que tiene como propósito simul
 ## Enlaces
 
 - Github:
-- Netlify: 
+- Netlify: https://singup-login.netlify.app/
